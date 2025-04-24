@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--  Frase de fundo  -->
+      <p class="fundo"> < developer > </p>
+
+    <!--  Div do cabeçalho  -->
+    <div class="cabeça">
+        <h1 class="name_p">Portfólio</h1>
+        <p class="barra"> | </p>
+        <p class="barra-2"> | </p>
+        <button onclick="btnmenu()" class="btn-menu">Menu</button>
+        <button onclick = "btnprojetos()" class = "btn-projetos">Projetos</button>
+        <button onclick="btncontato()" class="btn-contato">Contato</button>
+    </div>
+    
+    <!--  Div do menu  -->
+    <div class="portfólio">       
+        <h2 class="apresentaçao-1">Seja bem vindo ao meu portfólio!</h2>
+        <br>
+        <img class="imagem"
+            src="data:image/jpeg;base64,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">
+        <p class="desc">Olá, meu nome é Davi Corrêa Ribeiro e sou estudante de Engenharia de Software.</p>
+        <p class="desc2"> Estou sempre em busca de aprender novas tecnologias e aprimorar minhas habilidades. Atualmente, estou focado em desenvolver projetos que me ajudem a crescer profissionalmente.</p>
+    </div>
+
+    <!--  Div dos projetos  -->
+    <div class="projetos">
+        <h2 class="tprojetos">Projetos:</h2>
+        <ul class="fprojetos">
+            <li><a href="http://127.0.0.1:3000/.vscode/List/index.html">To-Do List</a></li>
+        </ul>
+    </div>
+
+    <!--  Div do contato  -->
+    <div class="contato">
+        <h2 class="titulo-num">Número de telefone:</h2>
+        <p class="num">+55 (21) 97549-2342</p>
+        <h2 class="titulo-email">E-mail:</h2>
+        <p class="email">davicorrea.dev@gmail.com</p>
+        <p class="linkedin"><a href="https://www.linkedin.com/in/davi-corr%C3%AAa-9711b9362/">LinkedIn</a></p>
+        <p class="github"><a href="https://github.com/Calangox">GitHub</a>
+    </div> 
+<script src="script.js"></script>
+</body>
+</html>
